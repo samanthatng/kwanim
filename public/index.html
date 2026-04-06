@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kwanim — Kwan Im Oracle, Divination Lots &amp; Digital Sanctuary</title>
+<meta name="description" content="A sacred digital sanctuary dedicated to Kwan Im (Guanyin), Goddess of Mercy. Seek guidance through ancient divination lots, explore famous temples, learn how to pray, and speak with the AI oracle.">
+<meta name="keywords" content="Kwan Im, Guanyin, Goddess of Mercy, divination lots, fortune sticks, Buddhist divination, Kwan Im temple Singapore, how to pray to Kwan Im, Guanyin oracle, Chinese Buddhist practice, compassion bodhisattva">
+<meta property="og:title" content="Kwanim — Kwan Im Oracle &amp; Digital Sanctuary">
+<meta property="og:description" content="Seek guidance from Kwan Im, Goddess of Mercy. Ancient divination lots, sacred temple directory, prayer guides, and an AI oracle — all in one compassionate sanctuary.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kwanim.ai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kwanim.ai">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Structured Data: FAQ for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Kwanim",
+  "url": "https://kwanim.ai",
+  "description": "A digital sanctuary dedicated to Kwan Im, Goddess of Mercy — featuring divination lots, temple directory, prayer guides and AI oracle.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://kwanim.ai/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Kwan Im?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kwan Im (觀音), also known as Guanyin, is the Bodhisattva of Compassion in Mahayana Buddhism. Revered across Singapore, Southeast Asia, Taiwan, Hong Kong and China, she is one of the most beloved spiritual figures in the world, known for hearing the cries of all living beings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are divination lots?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divination lots (also called fortune sticks) are an ancient Chinese Buddhist practice of seeking guidance from the Goddess by drawing a numbered lot from a container. Each lot contains a poetic verse that carries spiritual wisdom relevant to the seeker's question."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I pray to Kwan Im?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To pray to Kwan Im, cleanse your hands, light three incense sticks, prepare vegetarian offerings such as fruit and flowers, bow three times holding the incense, state your name and speak your prayer, then recite the Heart Mantra: Namo Guan Shi Yin Pusa."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --ivory:#fdf8f4;
+  --blush:#fce8ee;
+  --petal:#f7cdd9;
+  --rose:#e8a0b4;
+  --deep-rose:#c4687e;
+  --celestial:#f9f1f5;
+  --gold:#c9a96e;
+  --gold-light:#e8d5ae;
+  --text-dark:#3d2535;
+  --text-mid:#7a4d5e;
+  --text-light:#b08090;
+  --white:#ffffff;
+  --nav-h:60px;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  background:var(--ivory);
+  color:var(--text-dark);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(253,248,244,0.93);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(232,160,180,0.25);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 2rem;height:var(--nav-h);
+}
+.nav-logo{
+  font-family:'Cinzel',serif;
+  font-size:1.1rem;letter-spacing:0.18em;
+  color:var(--deep-rose);text-decoration:none;cursor:pointer;
+  flex-shrink:0;
+}
+.nav-links{display:flex;gap:1.6rem;align-items:center}
+.nav-links a{
+  font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--text-mid);text-decoration:none;cursor:pointer;
+  transition:color 0.2s;white-space:nowrap;
+}
+.nav-links a:hover{color:var(--deep-rose)}
+.nav-toggle{
+  display:none;background:none;border:none;cursor:pointer;
+  flex-direction:column;gap:5px;padding:4px;
+}
+.nav-toggle span{
+  display:block;width:22px;height:1.5px;
+  background:var(--text-mid);transition:all 0.25s;
+}
+.mobile-menu{
+  display:none;position:fixed;top:var(--nav-h);left:0;right:0;
+  background:rgba(253,248,244,0.98);
+  border-bottom:1px solid var(--petal);
+  padding:1.2rem 2rem;z-index:99;
+  flex-direction:column;gap:1.2rem;
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{
+  font-size:0.9rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--text-mid);text-decoration:none;cursor:pointer;
+  padding:0.4rem 0;border-bottom:1px solid rgba(247,205,217,0.3);
+}
+.mobile-menu a:last-child{border-bottom:none}
+
+/* ── SECTIONS ── */
+.section{display:none;padding-top:var(--nav-h)}
+.section.active{display:block}
+
+/* ── HERO ── */
+#hero{
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;min-height:100vh;
+  background:linear-gradient(180deg,#fff8fb 0%,#fce8ee 45%,#f9f1f5 100%);
+  position:relative;overflow:hidden;text-align:center;
+  padding:4rem 1.5rem 3rem;
+}
+.petals-wrap{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.petal{
+  position:absolute;
+  border-radius:50% 50% 50% 0;
+  background:rgba(247,205,217,0.55);
+  animation:floatPetal linear infinite;
+}
+@keyframes floatPetal{
+  0%{transform:translateY(-30px) rotate(0deg);opacity:0}
+  10%{opacity:1}
+  85%{opacity:0.4}
+  100%{transform:translateY(105vh) rotate(720deg);opacity:0}
+}
+.lotus-icon{
+  width:72px;height:72px;margin-bottom:1.5rem;
+  animation:pulseOrb 4s ease-in-out infinite;
+}
+@keyframes pulseOrb{
+  0%,100%{opacity:0.8;transform:scale(1)}
+  50%{opacity:1;transform:scale(1.06)}
+}
+.hero-eyebrow{
+  font-size:0.68rem;letter-spacing:0.28em;text-transform:uppercase;
+  color:var(--rose);margin-bottom:0.9rem;
+}
+.hero-title{
+  font-family:'Cinzel',serif;
+  font-size:clamp(2rem,6vw,3.6rem);
+  font-weight:400;color:var(--text-dark);
+  line-height:1.15;margin-bottom:0.6rem;
+}
+.hero-title em{color:var(--deep-rose);font-style:normal}
+.hero-rule{
+  width:100px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--rose),transparent);
+  margin:1.2rem auto;
+}
+.hero-desc{
+  font-family:'IM Fell English',Georgia,serif;
+  font-size:clamp(0.95rem,2.5vw,1.08rem);font-style:italic;
+  color:var(--text-mid);max-width:500px;
+  line-height:1.9;margin:0 auto 2.5rem;
+}
+.pillar-grid{
+  display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;
+  max-width:560px;
+}
+.pillar-btn{
+  font-family:'Cormorant Garamond',serif;
+  font-size:0.85rem;letter-spacing:0.08em;
+  padding:0.65rem 1.3rem;
+  border:1px solid var(--rose);
+  background:rgba(255,255,255,0.75);
+  color:var(--deep-rose);cursor:pointer;
+  border-radius:2rem;transition:all 0.22s;
+  -webkit-tap-highlight-color:transparent;
+}
+.pillar-btn:hover,.pillar-btn:active{
+  background:var(--deep-rose);color:white;border-color:var(--deep-rose);
+}
+
+/* ── SHARED PAGE LAYOUT ── */
+.page-wrap{max-width:740px;margin:0 auto;padding:4.5rem 1.5rem 5rem}
+.section-eyebrow{
+  font-size:0.64rem;letter-spacing:0.26em;text-transform:uppercase;
+  color:var(--rose);margin-bottom:0.75rem;
+}
+.section-heading{
+  font-family:'Cinzel',serif;
+  font-size:clamp(1.5rem,3vw,2.1rem);
+  font-weight:400;color:var(--text-dark);
+  margin-bottom:1.2rem;line-height:1.35;
+}
+.gold-bar{width:52px;height:2px;background:var(--gold);margin:1.6rem 0}
+.prose{font-size:clamp(0.95rem,2vw,1.05rem);line-height:1.95;color:var(--text-mid)}
+.prose p+p{margin-top:1.1rem}
+
+/* ── ABOUT ── */
+#about{background:var(--white)}
+.attr-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:1rem;margin-top:2.2rem;
+}
+.attr-card{
+  border:1px solid var(--petal);border-radius:1rem;
+  padding:1.1rem 1rem;background:var(--blush);text-align:center;
+}
+.attr-icon{font-size:1.5rem;margin-bottom:0.45rem;display:block}
+.attr-name{
+  font-family:'Cinzel',serif;font-size:0.72rem;
+  letter-spacing:0.1em;color:var(--deep-rose);
+}
+.attr-desc{font-size:0.82rem;color:var(--text-mid);margin-top:0.3rem;line-height:1.5}
+.seo-faq{margin-top:3rem}
+.faq-item{
+  border-top:1px solid rgba(247,205,217,0.5);
+  padding:1.1rem 0;
+}
+.faq-q{
+  font-family:'Cinzel',serif;font-size:0.88rem;
+  letter-spacing:0.05em;color:var(--deep-rose);
+  margin-bottom:0.5rem;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:1rem;
+}
+.faq-a{font-size:0.92rem;line-height:1.8;color:var(--text-mid);display:none}
+.faq-a.open{display:block}
+.faq-chevron{font-size:0.7rem;transition:transform 0.2s;flex-shrink:0}
+.faq-q.expanded .faq-chevron{transform:rotate(180deg)}
+
+/* ── DIVINATION ── */
+#divination{
+  background:linear-gradient(180deg,#fff8fb 0%,var(--celestial) 100%);
+}
+.oracle-box{
+  background:white;border:1px solid var(--petal);
+  border-radius:1.5rem;padding:2rem 1.8rem;
+  margin:2rem 0;text-align:center;
+  position:relative;overflow:hidden;
+}
+.oracle-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--petal),var(--rose),var(--gold),var(--rose),var(--petal));
+}
+.oracle-hint{
+  font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--text-light);margin-bottom:1.1rem;
+}
+.q-area{
+  width:100%;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1rem;font-style:italic;color:var(--text-dark);
+  border:1px solid var(--petal);border-radius:0.75rem;
+  padding:0.85rem 1rem;background:var(--ivory);
+  resize:none;outline:none;min-height:80px;margin-bottom:1.3rem;
+  transition:border-color 0.2s;
+}
+.q-area::placeholder{color:var(--text-light)}
+.q-area:focus{border-color:var(--rose)}
+.draw-btn{
+  font-family:'Cinzel',serif;font-size:0.82rem;letter-spacing:0.12em;
+  padding:0.85rem 2.2rem;
+  background:var(--deep-rose);color:white;
+  border:none;border-radius:2rem;cursor:pointer;
+  transition:all 0.22s;-webkit-tap-highlight-color:transparent;
+}
+.draw-btn:hover{background:var(--text-dark);transform:translateY(-1px)}
+.draw-btn:active{transform:translateY(0)}
+.lot-result{
+  display:none;margin-top:1.8rem;
+  border-top:1px solid var(--petal);padding-top:1.8rem;
+}
+.lot-num{
+  font-family:'Cinzel',serif;font-size:3rem;
+  color:var(--gold);line-height:1;
+}
+.lot-cat{
+  font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--rose);margin:0.5rem 0 1rem;
+}
+.lot-verse{
+  font-family:'IM Fell English',Georgia,serif;
+  font-size:0.98rem;font-style:italic;
+  color:var(--text-mid);line-height:1.95;
+  max-width:420px;margin:0 auto 1.5rem;
+  white-space:pre-line;
+}
+.interpret-btn{
+  font-family:'Cormorant Garamond',serif;
+  font-size:0.88rem;letter-spacing:0.06em;
+  padding:0.7rem 1.8rem;
+  background:transparent;color:var(--deep-rose);
+  border:1px solid var(--rose);border-radius:2rem;
+  cursor:pointer;transition:all 0.2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.interpret-btn:hover,.interpret-btn:active{background:var(--blush)}
+.ai-resp{
+  display:none;margin-top:1.4rem;
+  background:var(--ivory);border-radius:1rem;
+  padding:1.1rem 1.3rem;text-align:left;
+  border-left:3px solid var(--rose);
+}
+.ai-resp p{
+  font-family:'IM Fell English',Georgia,serif;
+  font-size:0.92rem;font-style:italic;
+  line-height:1.9;color:var(--text-mid);
+}
+.divination-info{
+  margin-top:2.5rem;
+  border-top:1px solid rgba(247,205,217,0.4);
+  padding-top:2rem;
+}
+.divination-info h2{
+  font-family:'Cinzel',serif;font-size:1rem;
+  color:var(--text-dark);margin-bottom:0.8rem;letter-spacing:0.05em;
+}
+.divination-info p{
+  font-size:0.88rem;line-height:1.8;color:var(--text-mid);margin-bottom:0.7rem;
+}
+
+/* ── PAYMENT MODAL ── */
+.modal-bg{
+  display:none;position:fixed;inset:0;
+  background:rgba(61,37,53,0.55);z-index:200;
+  align-items:center;justify-content:center;padding:1rem;
+}
+.modal-bg.open{display:flex}
+.modal-card{
+  background:white;border-radius:1.5rem;
+  padding:2.2rem 1.8rem;max-width:420px;width:100%;
+  border-top:3px solid var(--rose);
+  position:relative;
+  max-height:90vh;overflow-y:auto;
+}
+.modal-card h3{
+  font-family:'Cinzel',serif;font-size:1rem;
+  color:var(--deep-rose);margin-bottom:0.4rem;
+}
+.modal-card>p{
+  font-size:0.86rem;color:var(--text-mid);
+  margin-bottom:1.4rem;line-height:1.65;
+}
+.field-lbl{
+  font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--text-light);display:block;margin-bottom:0.3rem;
+}
+.field-in{
+  width:100%;font-size:0.93rem;
+  border:1px solid var(--petal);border-radius:0.5rem;
+  padding:0.62rem 0.85rem;margin-bottom:0.9rem;
+  outline:none;font-family:'Cormorant Garamond',serif;
+  color:var(--text-dark);background:white;
+  transition:border-color 0.2s;
+}
+.field-in:focus{border-color:var(--rose)}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:0.7rem}
+.pay-btn{
+  width:100%;font-family:'Cinzel',serif;
+  font-size:0.82rem;letter-spacing:0.1em;
+  padding:0.9rem;background:var(--deep-rose);color:white;
+  border:none;border-radius:2rem;cursor:pointer;margin-top:0.4rem;
+  transition:background 0.2s;-webkit-tap-highlight-color:transparent;
+}
+.pay-btn:hover{background:var(--text-dark)}
+.close-btn{
+  position:absolute;top:1rem;right:1.1rem;
+  background:none;border:none;font-size:1.1rem;
+  color:var(--text-light);cursor:pointer;padding:0.3rem;
+}
+
+/* ── TEMPLES ── */
+#temples{background:var(--white)}
+.country-block{margin-bottom:2.2rem}
+.country-hd{
+  font-family:'Cinzel',serif;
+  font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);
+  border-bottom:1px solid var(--gold-light);
+  padding-bottom:0.55rem;margin-bottom:0.9rem;
+}
+.temple-list{list-style:none}
+.temple-item{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  padding:0.8rem 0;
+  border-bottom:1px solid rgba(232,160,180,0.18);
+  gap:0.75rem;
+}
+.temple-item:last-child{border-bottom:none}
+.temple-name{
+  font-size:0.97rem;color:var(--text-dark);
+  font-weight:500;margin-bottom:0.12rem;line-height:1.3;
+}
+.temple-loc{font-size:0.8rem;color:var(--text-light);font-style:italic}
+.temple-tag{
+  font-size:0.65rem;letter-spacing:0.07em;text-transform:uppercase;
+  background:var(--blush);color:var(--deep-rose);
+  padding:0.22rem 0.6rem;border-radius:1rem;
+  white-space:nowrap;flex-shrink:0;
+  align-self:flex-start;margin-top:0.1rem;
+}
+.temples-seo{
+  margin-top:3rem;padding-top:2rem;
+  border-top:1px solid rgba(247,205,217,0.4);
+}
+.temples-seo h2{
+  font-family:'Cinzel',serif;font-size:1rem;
+  color:var(--text-dark);margin-bottom:0.7rem;letter-spacing:0.04em;
+}
+.temples-seo p{font-size:0.88rem;line-height:1.8;color:var(--text-mid);margin-bottom:0.7rem}
+
+/* ── PRAYER ── */
+#prayer{background:linear-gradient(180deg,#fff8fb 0%,var(--celestial) 100%)}
+.step{display:flex;gap:1.3rem;margin-bottom:2rem;align-items:flex-start}
+.step-n{
+  font-family:'Cinzel',serif;font-size:1.3rem;
+  color:var(--rose);min-width:1.8rem;line-height:1;flex-shrink:0;
+}
+.step-title{
+  font-family:'Cinzel',serif;font-size:0.85rem;
+  letter-spacing:0.07em;color:var(--deep-rose);margin-bottom:0.4rem;
+}
+.step-desc{font-size:0.93rem;line-height:1.8;color:var(--text-mid)}
+.mantra-box{
+  background:var(--blush);border-radius:1rem;
+  padding:1.3rem 1.5rem;margin-top:1.8rem;
+  border-left:3px solid var(--rose);
+}
+.mantra-lbl{
+  font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--rose);margin-bottom:0.55rem;
+}
+.mantra-text{
+  font-family:'IM Fell English',Georgia,serif;
+  font-size:1.05rem;font-style:italic;
+  color:var(--text-dark);line-height:1.85;
+}
+.mantra-rom{font-size:0.8rem;color:var(--text-light);margin-top:0.35rem}
+.prayer-seo{
+  margin-top:2.5rem;padding-top:2rem;
+  border-top:1px solid rgba(247,205,217,0.4);
+}
+.prayer-seo h2{
+  font-family:'Cinzel',serif;font-size:1rem;
+  color:var(--text-dark);margin-bottom:0.7rem;
+}
+.prayer-seo p{font-size:0.88rem;line-height:1.8;color:var(--text-mid);margin-bottom:0.7rem}
+
+/* ── ORACLE CHAT ── */
+#oracle{background:var(--white)}
+.chat-area{
+  background:var(--ivory);border:1px solid var(--petal);
+  border-radius:1.2rem;padding:1.3rem;
+  min-height:260px;max-height:340px;
+  overflow-y:auto;margin:1.5rem 0;
+}
+.msg-oracle{
+  font-family:'IM Fell English',Georgia,serif;
+  font-size:0.93rem;font-style:italic;
+  color:var(--text-mid);line-height:1.85;margin-bottom:1.1rem;
+}
+.msg-oracle::before{content:'☽ ';color:var(--rose);font-style:normal}
+.msg-user{
+  text-align:right;font-size:0.88rem;
+  color:var(--text-dark);padding:0.55rem 0.95rem;
+  background:var(--blush);border-radius:1rem 1rem 0.2rem 1rem;
+  display:inline-block;max-width:88%;float:right;clear:both;
+  margin-bottom:1.1rem;line-height:1.5;
+}
+.chat-row{display:flex;gap:0.65rem;align-items:center}
+.chat-in{
+  flex:1;font-family:'Cormorant Garamond',serif;
+  font-size:0.95rem;font-style:italic;
+  border:1px solid var(--petal);border-radius:2rem;
+  padding:0.7rem 1.1rem;outline:none;
+  background:white;color:var(--text-dark);
+  transition:border-color 0.2s;min-width:0;
+}
+.chat-in:focus{border-color:var(--rose)}
+.chat-send{
+  font-family:'Cinzel',serif;font-size:0.75rem;
+  padding:0.7rem 1.2rem;background:var(--deep-rose);
+  color:white;border:none;border-radius:2rem;
+  cursor:pointer;white-space:nowrap;
+  transition:background 0.2s;flex-shrink:0;
+  -webkit-tap-highlight-color:transparent;
+}
+.chat-send:hover{background:var(--text-dark)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--text-dark);color:var(--petal);
+  text-align:center;padding:3rem 1.5rem;
+}
+.footer-logo{
+  font-family:'Cinzel',serif;font-size:1.25rem;
+  letter-spacing:0.2em;color:var(--rose);margin-bottom:0.4rem;
+}
+.footer-tag{
+  font-size:0.8rem;font-style:italic;
+  color:rgba(247,205,217,0.55);margin-bottom:1.5rem;
+}
+.footer-links{
+  display:flex;gap:1.2rem;justify-content:center;
+  flex-wrap:wrap;margin-bottom:1.5rem;
+}
+.footer-links a{
+  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:rgba(247,205,217,0.45);text-decoration:none;cursor:pointer;
+}
+.footer-links a:hover{color:var(--rose)}
+.footer-legal{
+  font-size:0.72rem;color:rgba(247,205,217,0.3);line-height:1.7;
+  max-width:480px;margin:0 auto;
+}
+
+/* ── LOADING ANIMATION ── */
+.dots::after{
+  content:'';
+  animation:dotanim 1.4s infinite;
+}
+@keyframes dotanim{
+  0%,20%{content:''}
+  40%{content:'.'}
+  60%{content:'..'}
+  80%,100%{content:'...'}
+}
+
+/* ── MOBILE ── */
+@media(max-width:680px){
+  :root{--nav-h:56px}
+  nav{padding:0 1.1rem}
+  .nav-links{display:none}
+  .nav-toggle{display:flex}
+  .hero-title{font-size:2.1rem}
+  .pillar-btn{font-size:0.8rem;padding:0.6rem 1.1rem}
+  .page-wrap{padding:3.5rem 1.1rem 4rem}
+  .oracle-box{padding:1.5rem 1.2rem}
+  .lot-verse{font-size:0.92rem}
+  .modal-card{padding:1.8rem 1.3rem;border-radius:1.2rem}
+  .attr-grid{grid-template-columns:1fr 1fr}
+  .field-row{grid-template-columns:1fr 1fr}
+  .temple-item{flex-direction:column;gap:0.4rem}
+  .chat-area{min-height:200px;max-height:280px}
+  .chat-send{padding:0.7rem 1rem;font-size:0.7rem}
+  .footer-links{gap:0.9rem}
+  .step{gap:1rem}
+}
+@media(max-width:380px){
+  .hero-title{font-size:1.8rem}
+  .hero-desc{font-size:0.9rem}
+  .pillar-grid{gap:0.5rem}
+  .pillar-btn{font-size:0.75rem;padding:0.55rem 1rem}
+  .attr-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo" onclick="show('hero')">KWANIM</span>
+  <div class="nav-links">
+    <a onclick="show('about')">About</a>
+    <a onclick="show('divination')">Divination</a>
+    <a onclick="show('temples')">Temples</a>
+    <a onclick="show('prayer')">How to Pray</a>
+    <a onclick="show('oracle')">Oracle</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="show('about');closeMobile()">About Kwan Im</a>
+  <a onclick="show('divination');closeMobile()">Divination Lots</a>
+  <a onclick="show('temples');closeMobile()">Sacred Temples</a>
+  <a onclick="show('prayer');closeMobile()">How to Pray</a>
+  <a onclick="show('oracle');closeMobile()">Oracle Chat</a>
+</div>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<div id="hero" class="section active">
+  <div class="petals-wrap" id="petalsWrap"></div>
+
+  <svg class="lotus-icon" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="36" cy="36" r="29" fill="none" stroke="#e8a0b4" stroke-width="0.7"/>
+    <circle cx="36" cy="36" r="21" fill="none" stroke="#c9a96e" stroke-width="0.5"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(0 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(40 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(80 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(120 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(160 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(200 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(240 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(280 36 36)"/>
+    <ellipse cx="36" cy="36" rx="7" ry="13" fill="rgba(232,160,180,0.28)" transform="rotate(320 36 36)"/>
+    <circle cx="36" cy="36" r="4.5" fill="rgba(201,169,110,0.45)"/>
+    <circle cx="36" cy="36" r="2" fill="#c9a96e"/>
+  </svg>
+
+  <p class="hero-eyebrow">A Sacred Digital Sanctuary</p>
+  <h1 class="hero-title">Kwan Im<br><em>Goddess of Mercy</em></h1>
+  <div class="hero-rule"></div>
+  <p class="hero-desc">She who hears the cries of the world — seek her guidance through ancient divination, discover sacred temples, and find solace in her boundless compassion.</p>
+
+  <div class="pillar-grid">
+    <button class="pillar-btn" onclick="show('about')">Her Story</button>
+    <button class="pillar-btn" onclick="show('divination')">Divination Lots</button>
+    <button class="pillar-btn" onclick="show('temples')">Sacred Temples</button>
+    <button class="pillar-btn" onclick="show('prayer')">How to Pray</button>
+    <button class="pillar-btn" onclick="show('oracle')">Speak with Her</button>
+  </div>
+</div>
+
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<div id="about" class="section">
+  <div class="page-wrap">
+    <p class="section-eyebrow">The Bodhisattva of Compassion</p>
+    <h1 class="section-heading">Who Is Kwan Im?</h1>
+    <div class="gold-bar"></div>
+
+    <div class="prose">
+      <p>Kwan Im (觀音) — known as Guanyin in Mandarin, Kannon in Japanese, and Quan Am in Vietnamese — is the Bodhisattva of Compassion and one of the most widely revered spiritual figures in the world. Her name translates as <em>"one who perceives the sounds of the world"</em> — a being so attuned to human suffering that she deferred her own enlightenment to remain as guardian of all living beings.</p>
+      <p>Her origins trace to the male Bodhisattva Avalokiteśvara of ancient India. As Buddhism spread through China, her form gradually softened into the graceful, feminine deity we know today — draped in flowing white robes, bearing a willow branch and a vase of pure water, standing serenely upon a lotus blossom.</p>
+      <p>Across Singapore, Malaysia, Thailand, Taiwan, Hong Kong, and China, her image watches over temples, household altars, fishing villages, and city streets alike. She is the first name spoken in gratitude, and the last name whispered in despair. Of all the Bodhisattvas, she is the most approachable — the one who asks nothing of you except that you turn toward her.</p>
+    </div>
+
+    <div class="attr-grid">
+      <div class="attr-card">
+        <span class="attr-icon">🪷</span>
+        <div class="attr-name">The Lotus</div>
+        <div class="attr-desc">Her sacred flower — purity and grace rising from muddy waters</div>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">🌿</span>
+        <div class="attr-name">Willow Branch</div>
+        <div class="attr-desc">Healing and flexibility — she bends with compassion, never breaks</div>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">🫧</span>
+        <div class="attr-name">Pure Water Vase</div>
+        <div class="attr-desc">Cleansing of karma, renewal of the spirit, blessings poured forth</div>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">📿</span>
+        <div class="attr-name">Mala Beads</div>
+        <div class="attr-desc">108 pearls of compassion — one for each human longing</div>
+      </div>
+    </div>
+
+    <!-- SEO FAQ Section -->
+    <div class="seo-faq" itemscope itemtype="https://schema.org/FAQPage">
+      <div class="gold-bar" style="margin-bottom:1.5rem"></div>
+      <p class="section-eyebrow">Frequently Asked Questions</p>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span itemprop="name">What is the difference between Kwan Im and Guanyin?</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Kwan Im and Guanyin refer to the same Bodhisattva of Compassion. "Kwan Im" is the Hokkien/Min Nan pronunciation, widely used across Singapore, Malaysia, and the Hokkien-speaking Chinese diaspora. "Guanyin" (觀音) is the standard Mandarin pronunciation. Other names include Kuan Yin, Quan Im (Vietnamese), and Kannon (Japanese). Regardless of the name, she is the same compassionate figure in Mahayana Buddhist tradition.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span itemprop="name">Is Kwan Im a goddess or a Bodhisattva?</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">In strict Buddhist doctrine, Kwan Im is a Bodhisattva — an enlightened being who chose to remain in the cycle of existence to help all sentient beings reach liberation. However, in popular Chinese folk religion, she is widely venerated as a goddess. Many devotees who are not Buddhist practitioners also pray to her, particularly in Taoist and syncretic Chinese religious contexts. She transcends doctrinal boundaries through her universal message of compassion.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span itemprop="name">What does Kwan Im help with?</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Devotees pray to Kwan Im for guidance in all areas of life — health and healing, fertility and childbirth, protection from harm, relief from suffering, relationship and family matters, career and business decisions, and spiritual growth. She is considered a protector of fishermen, sailors, and travelers. Many seek her guidance simply for peace of mind and clarity during difficult seasons of life. She is said to appear in whatever form is most needed by the seeker.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span itemprop="name">Why does Kwan Im stand on a lotus flower?</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">The lotus is one of Buddhism's most profound symbols. It grows in muddy, murky water yet blooms into a flower of exceptional purity and beauty — representing the journey from suffering (samsara) to enlightenment (nirvana). Kwan Im standing or sitting upon a lotus signifies that compassion arises not despite the presence of suffering in the world, but within it and through it. It is also her favourite flower, and white lotus blossoms are among the most beloved offerings made to her.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ DIVINATION ═══════════════ -->
+<div id="divination" class="section">
+  <div class="page-wrap">
+    <p class="section-eyebrow">Seek Guidance</p>
+    <h1 class="section-heading">Divination Lots</h1>
+    <div class="gold-bar"></div>
+    <p class="prose">An ancient sacred practice of seeking guidance from the Goddess — hold your question in your heart, breathe deeply, and draw a lot. Each numbered verse carries wisdom from the realm of compassion, as it has for thousands of years in temples across Asia.</p>
+
+    <div class="oracle-box">
+      <p class="oracle-hint">Hold your question in stillness before you draw</p>
+      <textarea class="q-area" id="qInput" placeholder="What weighs upon your heart today? You may speak it aloud, or simply hold it in silence…" rows="3"></textarea>
+      <button class="draw-btn" onclick="drawLot()">Draw a Divination Lot</button>
+
+      <div class="lot-result" id="lotResult">
+        <div class="lot-num" id="lotNum" aria-live="polite"></div>
+        <div class="lot-cat" id="lotCat"></div>
+        <div class="lot-verse" id="lotVerse"></div>
+        <button class="interpret-btn" onclick="openPayment()">Receive Deep Interpretation — $2</button>
+        <div class="ai-resp" id="aiResp">
+          <p id="aiText"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO content about divination -->
+    <div class="divination-info">
+      <h2>About Divination Lots</h2>
+      <p>Divination lots — known across cultures by many names — are one of the oldest and most beloved forms of spiritual guidance in Chinese Buddhist and Taoist practice. Traditionally, a seeker would visit a temple, kneel before the Goddess's image, shake a cylindrical container of numbered bamboo sticks until one fell out, and then receive a corresponding printed verse from the temple attendant.</p>
+      <p>Each lot belongs to a category of fortune — from "Greatly Auspicious" to "Exercise Caution" — and carries a four-line verse rich in natural imagery: mountains, water, plum blossoms, seasons, and the cycles of heaven. The verses are not predictions, but poetic invitations to reflect. Their wisdom lies not in what they tell you about the future, but in what they illuminate about your present situation and inner state.</p>
+      <p>At Kwanim, we have preserved the traditional structure and verse poetics of this practice, making it available to the global Kwan Im community wherever they are in the world. Draw a lot, receive your verse — and if you seek deeper personal guidance, our AI oracle, speaking in Kwan Im's voice, can offer a personalised interpretation of your lot in light of your specific question.</p>
+    </div>
+  </div>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div class="modal-bg" id="payModal">
+  <div class="modal-card">
+    <button class="close-btn" onclick="closePayment()" aria-label="Close">✕</button>
+    <h3>Unlock Deep Interpretation</h3>
+    <p>Our oracle, speaking in Kwan Im's voice, will interpret your lot in light of your personal question — ancient wisdom, personalised for your situation. A one-time offering of $2.</p>
+    <label class="field-lbl">Name on Card</label>
+    <input class="field-in" type="text" placeholder="Your name" id="cardName" autocomplete="cc-name">
+    <label class="field-lbl">Card Number</label>
+    <input class="field-in" type="tel" placeholder="4242 4242 4242 4242" id="cardNum" maxlength="19" oninput="fmtCard(this)" autocomplete="cc-number" inputmode="numeric">
+    <div class="field-row">
+      <div>
+        <label class="field-lbl">Expiry</label>
+        <input class="field-in" type="text" placeholder="MM / YY" maxlength="7" autocomplete="cc-exp" inputmode="numeric">
+      </div>
+      <div>
+        <label class="field-lbl">CVC</label>
+        <input class="field-in" type="text" placeholder="123" maxlength="3" autocomplete="cc-csc" inputmode="numeric">
+      </div>
+    </div>
+    <button class="pay-btn" onclick="processPayment()">Offer $2 · Receive Wisdom</button>
+  </div>
+</div>
+
+<!-- ═══════════════ TEMPLES ═══════════════ -->
+<div id="temples" class="section">
+  <div class="page-wrap">
+    <p class="section-eyebrow">Sacred Sites Worldwide</p>
+    <h1 class="section-heading">Temples of Kwan Im</h1>
+    <div class="gold-bar"></div>
+    <p class="prose" style="margin-bottom:2.5rem">From mountain monasteries to beloved city shrines — wherever her devotees gather, she is present. A guide to the most significant temples across Asia for pilgrims and visitors.</p>
+
+    <div id="templeDir"></div>
+
+    <div class="temples-seo">
+      <h2>Visiting Kwan Im Temples in Singapore</h2>
+      <p>Singapore is home to some of the most beloved Kwan Im temples in Southeast Asia, reflecting the island's deeply rooted Hokkien and Teochew Buddhist heritage. The most famous is Kwan Im Thong Hood Cho Temple on Waterloo Street — one of the most visited religious sites in Singapore, drawing thousands of devotees daily who come to pray, draw divination lots, and seek blessings.</p>
+      <p>Other significant temples include Lian Shan Shuang Lin Monastery in Toa Payoh, a UNESCO-listed complex and one of the oldest Chinese monasteries in Singapore, and Pu Tuo Si in Bishan, a large modern monastery named after Kwan Im's sacred island home.</p>
+      <h2>Putuoshan — Kwan Im's Sacred Island</h2>
+      <p>Putuoshan (普陀山) in Zhejiang Province, China, is considered the earthly home of Kwan Im and the most sacred site for her devotees worldwide. One of the Four Sacred Buddhist Mountains of China, the island is home to hundreds of temples, with Puji Temple as its spiritual centre. Pilgrims from across Asia make the journey to Putuoshan to pray, perform divination, and bathe in the Goddess's presence.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ PRAYER ═══════════════ -->
+<div id="prayer" class="section">
+  <div class="page-wrap">
+    <p class="section-eyebrow">Ritual &amp; Practice</p>
+    <h1 class="section-heading">How to Pray to Kwan Im</h1>
+    <div class="gold-bar"></div>
+    <p class="prose" style="margin-bottom:2rem">There is no wrong way to speak to the Goddess of Mercy — she hears you regardless of form. These are the traditional practices, passed down through generations of devotees across Southeast Asia and China.</p>
+
+    <div>
+      <div class="step">
+        <div class="step-n">一</div>
+        <div>
+          <div class="step-title">Cleanse &amp; Arrive with Intention</div>
+          <div class="step-desc">Wash your hands before approaching the altar, as an act of purification and respect. Take a moment to settle your mind — release the distractions of the day. Set your intention clearly and sincerely before you begin.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">二</div>
+        <div>
+          <div class="step-title">Light Three Incense Sticks</div>
+          <div class="step-desc">Three sticks represent past, present, and future — or the Three Jewels of Buddhism (the Buddha, the Dharma, and the Sangha). Light them from a candle rather than a lighter if possible, and hold them with both hands.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">三</div>
+        <div>
+          <div class="step-title">Prepare Your Offerings</div>
+          <div class="step-desc">Fresh flowers (lotus, white chrysanthemum, or any fragrant bloom), fruit (oranges, pears, or apples), and clean water are traditional. Kwan Im is vegetarian — never offer meat. The act of offering itself is the gift; the sincerity matters more than the cost.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">四</div>
+        <div>
+          <div class="step-title">Bow Three Times</div>
+          <div class="step-desc">Hold the incense at chest height with both hands clasped around it. Bow slowly and fully three times before the image of Kwan Im. Then place the sticks in the incense urn, left hand first.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">五</div>
+        <div>
+          <div class="step-title">Speak Your Prayer</div>
+          <div class="step-desc">State your full name, your date of birth, and your home address — this is the traditional way of "introducing yourself" so the Goddess knows where to send her blessings. Then speak from the heart: your gratitude, your request, your question, or simply your presence.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">六</div>
+        <div>
+          <div class="step-title">Recite the Mantra</div>
+          <div class="step-desc">Chant her Heart Mantra as many times as feels right — 3, 9, 21, or 108 repetitions. Use mala beads to count if you have them. The mantra does not need to be perfect; your sincerity carries it.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">七</div>
+        <div>
+          <div class="step-title">Close with Gratitude</div>
+          <div class="step-desc">Bow three more times in closing. Express gratitude — not for a specific outcome, but for her presence and compassion. Trust that she has heard. Return offerings to share with family as blessed food, or leave them at the temple per local custom.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mantra-box">
+      <div class="mantra-lbl">The Heart Mantra (心咒)</div>
+      <div class="mantra-text">Namo Guan Shi Yin Pusa</div>
+      <div class="mantra-rom">南無觀世音菩薩 — "I take refuge in Guan Yin Bodhisattva"</div>
+    </div>
+    <div class="mantra-box" style="margin-top:1rem">
+      <div class="mantra-lbl">Opening Lines of the Great Compassion Mantra (大悲咒)</div>
+      <div class="mantra-text">Namo He La Da Na Duo La Ye Ye<br>Namo Wo Li Ye, Po Lu Jie Di<br>Shuo Bo La Ye, Pu Ti Sa Duo Po Ye</div>
+      <div class="mantra-rom">Chanted to invoke her boundless compassion — traditionally 108 times</div>
+    </div>
+
+    <div class="prayer-seo">
+      <h2>What to Offer Kwan Im</h2>
+      <p>Kwan Im is associated with purity and compassion, so all offerings should be fresh, fragrant, and vegetarian. The most traditional offerings include fresh lotus flowers, white chrysanthemums, oranges, apples, pears, clean water, and vegetarian food. She is also offered incense, candles, and paper offerings burned in her honour.</p>
+      <p>Some devotees offer symbolic items meaningful to their prayer — a paper boat if they are praying for safe travel, flowers for love and relationships, or specific fruits associated with abundance during the Lunar New Year. The key principle in all Kwan Im worship is sincerity: she receives the intention behind the offering, not the offering itself.</p>
+      <h2>Best Days to Pray to Kwan Im</h2>
+      <p>In Chinese Buddhist tradition, Kwan Im has three sacred days annually: the 19th day of the 2nd lunar month (her birthday), the 19th day of the 6th lunar month (her enlightenment day), and the 19th day of the 9th lunar month (her renunciation day). Many devotees also visit her temple on the 1st and 15th of each lunar month — days of prayer across Chinese Buddhist and Taoist practice. However, she is believed to be equally present every day of the year for those who seek her sincerely.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ ORACLE ═══════════════ -->
+<div id="oracle" class="section">
+  <div class="page-wrap">
+    <p class="section-eyebrow">The Voice of Compassion</p>
+    <h1 class="section-heading">Speak with the Oracle</h1>
+    <div class="gold-bar"></div>
+    <p class="prose" style="margin-bottom:0">She speaks not to give you answers, but to help you find what you already know. Share what is in your heart — the oracle listens without judgment, responds with compassion, and reflects wisdom from the Bodhisattva's teachings.</p>
+
+    <div class="chat-area" id="chatArea">
+      <div class="msg-oracle">Hi. I'm glad you're here. Take a breath — there's no rush. Whatever's on your mind, you can share it at your own pace. I'm listening.</div>
+      <div style="clear:both"></div>
+    </div>
+    <div class="chat-row">
+      <input class="chat-in" id="chatIn" placeholder="Speak to her…" type="text" onkeydown="if(event.key==='Enter')sendMsg()" autocomplete="off">
+      <button class="chat-send" onclick="sendMsg()">Offer →</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">KWANIM</div>
+  <div class="footer-tag">She who hears the cries of the world</div>
+  <div class="footer-links">
+    <a onclick="show('about')">About Kwan Im</a>
+    <a onclick="show('divination')">Divination Lots</a>
+    <a onclick="show('temples')">Temples</a>
+    <a onclick="show('prayer')">How to Pray</a>
+    <a onclick="show('oracle')">Oracle</a>
+  </div>
+  <div class="footer-legal">
+    Kwanim is a digital sanctuary offered in the spirit of compassion and education. Divination lots are provided for reflective guidance and do not constitute predictions. The AI oracle interprets traditional teachings and should not replace professional advice.
+    <br>&copy; 2025 Kwanim · kwanim.ai
+  </div>
+</footer>
+
+<script>
+/* ── LOTS DATA: 40 lots ── */
+const LOTS = [
+  {n:1,cat:"Greatly Auspicious",v:"The plum blossom opens before the spring;\nPatience now yields abundance beyond measure.\nWhat seemed lost was merely resting —\nStill water holds the deepest reflection."},
+  {n:3,cat:"Greatly Auspicious",v:"Gold hidden in the mountain waits for one who looks;\nYour fortune does not announce itself with noise.\nSeek quietly, with eyes open and heart still —\nThe discovery is closer than you imagine."},
+  {n:5,cat:"Auspicious",v:"Wind touches the lake, then passes on;\nDo not grasp what is not yours to hold.\nRelease, and the river will carry you\nTo shores you could not have imagined."},
+  {n:7,cat:"Auspicious",v:"The bird returns to its nest before the storm;\nTrust the wisdom your body already holds.\nGo where warmth and familiarity call you —\nHome is where the next chapter begins."},
+  {n:9,cat:"Auspicious",v:"Clear spring water nourishes without effort;\nYour gentleness is not weakness but your power.\nContinue in your natural way — the results\nWill come as the harvest follows patient tending."},
+  {n:12,cat:"Moderately Auspicious",v:"The candle burns lower before the dawn;\nYour effort is not unseen by heaven.\nPersist through this narrow passage —\nLight awaits those who do not retreat."},
+  {n:14,cat:"Moderately Auspicious",v:"The chrysalis does not know it holds a butterfly;\nTrust the transformation you cannot yet see.\nThe discomfort of this season is purposeful —\nOut of great change comes unexpected grace."},
+  {n:16,cat:"Moderately Auspicious",v:"Rain falls on the just and unjust both;\nDo not compare your path to another's.\nYour portion comes from different fields —\nTend your own garden with faithful hands."},
+  {n:18,cat:"Mixed Fortune",v:"Clouded skies do not erase the stars;\nSeek counsel before you take the step.\nThe path forks here in shadow —\nStill your mind and the right road reveals."},
+  {n:20,cat:"Mixed Fortune",v:"The boat crosses when the wind is right;\nTiming is the hidden factor here.\nNeither rush forward nor hold back in fear —\nObserve and the moment will make itself known."},
+  {n:22,cat:"Mixed Fortune",v:"Jade and stone are found in the same river;\nNot all that glitters merits your trust.\nLook past the surface before you commit —\nPatience in discernment saves much sorrow."},
+  {n:23,cat:"Uncertain",v:"Neither the mountain nor the sea is wrong;\nYour answer depends on who you choose to be.\nHold this question another season —\nThe answer has not yet ripened."},
+  {n:25,cat:"Uncertain",v:"The autumn moon is full but briefly;\nSeize the clarity when it arrives.\nDo not wait for certainty that will not come —\nMove when the light is given, however small."},
+  {n:27,cat:"Auspicious",v:"New shoots push through the frozen earth;\nBegin — even imperfect beginnings bloom.\nThe risk is not as great as your fear;\nShe who dares gently wins gently."},
+  {n:29,cat:"Auspicious",v:"The phoenix does not mourn its former feathers;\nWhat you release makes room for what is coming.\nGrieve what must be grieved, then lift your eyes —\nRenewal moves toward those who face it."},
+  {n:31,cat:"Greatly Auspicious",v:"Dragon and phoenix meet at the crossroads;\nThis union was written before your birth.\nTrust what has drawn two hearts together —\nLove nurtured with care becomes unbreakable."},
+  {n:33,cat:"Greatly Auspicious",v:"The river reaches the sea without effort;\nFollow what flows naturally within you.\nThe path of least resistance is not laziness —\nSometimes it is the truest kind of wisdom."},
+  {n:35,cat:"Auspicious",v:"Stars do not compete with the sun;\nBe the kind of light this moment requires.\nSmall acts of compassion compound silently —\nYour goodness reaches further than you know."},
+  {n:36,cat:"Mixed Fortune",v:"The jade appears rough before it is cut;\nDo not judge the outcome too early.\nDiscipline now is compassion for your future self —\nEndure, and the gem will reveal itself."},
+  {n:38,cat:"Moderately Auspicious",v:"The farmer plants in faith without seeing fruit;\nYour unseen work will not go unrewarded.\nSeason follows season with faithful precision —\nHarvest is already on its way to you."},
+  {n:40,cat:"Inauspicious — Exercise Caution",v:"The bridge appears solid yet the current is strong;\nDo not cross in haste what cannot be undone.\nPause, consult those whose hands have crossed before —\nWisdom is knowing when not to move."},
+  {n:42,cat:"Inauspicious — Exercise Caution",v:"Winter comes regardless of our wishes;\nSome losses must be accepted, not fought.\nPreserve your strength for what can be saved —\nThe spring will ask for your full energy."},
+  {n:44,cat:"Auspicious",v:"Seeds sent ahead return as shade;\nYour generosity has not been forgotten by heaven.\nWhat you gave freely will return transformed —\nGrace multiplies in the hands of the merciful."},
+  {n:46,cat:"Auspicious",v:"The wise merchant knows when not to trade;\nSome things must not be exchanged for others.\nHold what is precious past all calculation —\nNot all wealth declares itself in gold."},
+  {n:48,cat:"Moderately Auspicious",v:"The mountain path rises before it descends;\nDo not mistake difficulty for wrong direction.\nYou are ascending — though your legs ache —\nThe view from above will justify the climb."},
+  {n:49,cat:"Greatly Auspicious",v:"After long winter, the first plum opens;\nYour waiting has not been in vain.\nAll that was promised quietly matures —\nReceive what is given with open hands."},
+  {n:51,cat:"Greatly Auspicious",v:"The emperor's jade returns to the emperor;\nWhat is rightfully yours cannot be permanently lost.\nThe wheel turns with perfect precision —\nBe patient; justice moves in its own time."},
+  {n:53,cat:"Auspicious",v:"The full moon illuminates hidden paths;\nA revelation is coming that will change your view.\nWhat you did not see before will become clear —\nReceive the clarity without resistance."},
+  {n:55,cat:"Mixed Fortune",v:"Half the sky is clear, half still holds cloud;\nNeither despair nor certainty serves you now.\nHold steady through this in-between season —\nShe does not abandon those who do not abandon hope."},
+  {n:57,cat:"Uncertain",v:"The fisherman waits without knowing what comes;\nFaith is the line cast into unseen waters.\nYou are not without anchor in this uncertainty —\nYour sincerity is the ground beneath your feet."},
+  {n:59,cat:"Moderately Auspicious",v:"The ink dries slowly on the important document;\nDo not hurry what requires careful consideration.\nA decision made with full understanding\nIs worth the time it takes to arrive at."},
+  {n:62,cat:"Moderately Auspicious",v:"The river does not rush toward the sea;\nYet it arrives, unfailingly, in time.\nDo not force what will come naturally —\nFollow the water's patient wisdom."},
+  {n:64,cat:"Mixed Fortune",v:"Two roads through the same forest differ;\nThe longer way sometimes proves the shorter.\nBefore you choose the path of least resistance,\nConsider what is waiting on the harder road."},
+  {n:68,cat:"Inauspicious — Exercise Caution",v:"The lantern burns brightly before it fades;\nNot all bright beginnings sustain themselves.\nLook past the appeal to what lies beneath —\nDurability matters more than early brilliance."},
+  {n:70,cat:"Auspicious",v:"Old roots give rise to unexpected flowers;\nReturn to what was left unfinished.\nThe answer you seek was offered long ago —\nLook again at what you passed too quickly."},
+  {n:76,cat:"Greatly Auspicious",v:"Clear skies after seven days of rain;\nYour trials have prepared, not diminished you.\nStep forward now with all you have learned —\nHeaven recognises those who persevered."},
+  {n:80,cat:"Uncertain",v:"The chrysanthemum blooms late and alone;\nSolitude now is not failure but formation.\nUse this quiet to know yourself more deeply —\nThe world will call for you when you are ready."},
+  {n:85,cat:"Auspicious",v:"Two lanterns lit from a single flame;\nCollaboration will take you farther than pride.\nSeek the one whose gifts complement your lack —\nTogether you will cross what neither could alone."},
+  {n:91,cat:"Mixed Fortune",v:"The fisherman casts his net at first light;\nTiming matters more than effort here.\nRe-read the signs that you have overlooked —\nThe moment is close; do not sleep through it."},
+  {n:96,cat:"Moderately Auspicious",v:"Mountains are climbed one step at a time;\nDo not measure yourself against the summit.\nSmall progress honoured becomes great progress —\nShe counts every step you take toward good."},
+  {n:100,cat:"Greatly Auspicious",v:"The golden lotus opens upon the still water;\nAll that you have prayed for aligns today.\nReceive with gratitude, and share what comes —\nAbundance shared is abundance multiplied."}
+];
+
+/* ── TEMPLES ── */
+const TEMPLES = {
+  "Singapore":[
+    {name:"Kwan Im Thong Hood Cho Temple",loc:"Waterloo Street, Singapore 187966",tag:"Most Visited"},
+    {name:"Lian Shan Shuang Lin Monastery",loc:"Toa Payoh, Singapore 310184",tag:"Heritage Listed"},
+    {name:"Pu Tuo Si",loc:"Bright Hill Road, Bishan, Singapore 579986",tag:"Major Monastery"},
+    {name:"Hong San See Temple",loc:"Mohamed Sultan Road, Singapore 238956",tag:"Historic"}
+  ],
+  "China":[
+    {name:"Puji Temple, Putuoshan",loc:"Zhoushan, Zhejiang Province",tag:"Most Sacred"},
+    {name:"Fayu Temple, Putuoshan",loc:"Zhoushan, Zhejiang Province",tag:"Imperial Temple"},
+    {name:"Lingyin Temple",loc:"Hangzhou, Zhejiang Province",tag:"Ancient"},
+    {name:"Nanhai Guanyin Statue",loc:"Hainan Island, Sanya",tag:"Iconic Statue"},
+    {name:"Guiyuan Buddhist Temple",loc:"Wuhan, Hubei Province",tag:"Pilgrimage Site"}
+  ],
+  "Taiwan":[
+    {name:"Longshan Temple",loc:"Wanhua District, Taipei",tag:"Most Visited"},
+    {name:"Fo Guang Shan Monastery",loc:"Dashu District, Kaohsiung",tag:"Grand Complex"},
+    {name:"Chaotian Temple",loc:"Beigang, Yunlin County",tag:"Major Shrine"},
+    {name:"Luermen Matsu Temple",loc:"Annan District, Tainan",tag:"Historic"}
+  ],
+  "Hong Kong":[
+    {name:"Po Lin Monastery",loc:"Ngong Ping, Lantau Island",tag:"Iconic"},
+    {name:"Man Mo Temple",loc:"Hollywood Road, Sheung Wan",tag:"Heritage Listed"},
+    {name:"Chi Lin Nunnery",loc:"Diamond Hill, Kowloon",tag:"Serene"},
+    {name:"Wong Tai Sin Temple",loc:"Diamond Hill, Kowloon",tag:"Most Visited"}
+  ],
+  "Malaysia":[
+    {name:"Kek Lok Si Temple",loc:"Air Itam, Penang",tag:"Largest in SE Asia"},
+    {name:"Thean Hou Temple",loc:"Kuala Lumpur",tag:"Landmark"},
+    {name:"Sam Poh Tong Cave Temple",loc:"Ipoh, Perak",tag:"Cave Temple"},
+    {name:"Cheng Hoon Teng Temple",loc:"Malacca City",tag:"Oldest in Malaysia"}
+  ],
+  "Thailand":[
+    {name:"Wat Huai Pla Kang",loc:"Chiang Rai",tag:"Giant Statue"},
+    {name:"Guan Yin Shrine, Yaowarat",loc:"Chinatown, Bangkok",tag:"Community Shrine"},
+    {name:"Wat Mangkon Kamalawat",loc:"Chinatown, Bangkok",tag:"Historic"}
+  ],
+  "Japan":[
+    {name:"Senso-ji Temple",loc:"Asakusa, Tokyo",tag:"Most Famous"},
+    {name:"Kiyomizudera",loc:"Higashiyama, Kyoto",tag:"UNESCO Listed"},
+    {name:"Hasedera Temple",loc:"Kamakura, Kanagawa",tag:"Pilgrimage Site"}
+  ],
+  "Indonesia":[
+    {name:"Vihara Dharma Bhakti",loc:"Glodok, Jakarta",tag:"Historic"},
+    {name:"Sam Poo Kong Temple",loc:"Semarang, Central Java",tag:"Iconic"}
+  ]
+};
+
+/* ── STATE ── */
+let curLot = null;
+let chatHist = [];
+
+/* ── NAVIGATION ── */
+function show(id){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  closeMobile();
+}
+
+/* ── MOBILE MENU ── */
+const toggle = document.getElementById('navToggle');
+const mmenu = document.getElementById('mobileMenu');
+toggle.addEventListener('click',()=>mmenu.classList.toggle('open'));
+function closeMobile(){mmenu.classList.remove('open')}
+
+/* ── FAQ ── */
+function toggleFaq(el){
+  const answer = el.nextElementSibling;
+  const open = answer.classList.contains('open');
+  document.querySelectorAll('.faq-a').forEach(a=>a.classList.remove('open'));
+  document.querySelectorAll('.faq-q').forEach(q=>q.classList.remove('expanded'));
+  if(!open){answer.classList.add('open');el.classList.add('expanded')}
+}
+
+/* ── DIVINATION ── */
+function drawLot(){
+  curLot = LOTS[Math.floor(Math.random()*LOTS.length)];
+  document.getElementById('lotNum').textContent = curLot.n;
+  document.getElementById('lotCat').textContent = curLot.cat;
+  document.getElementById('lotVerse').textContent = curLot.v;
+  document.getElementById('lotResult').style.display='block';
+  document.getElementById('aiResp').style.display='none';
+}
+
+function openPayment(){document.getElementById('payModal').classList.add('open')}
+function closePayment(){document.getElementById('payModal').classList.remove('open')}
+
+function fmtCard(el){
+  let v=el.value.replace(/\D/g,'').substring(0,16);
+  el.value=v.replace(/(.{4})/g,'$1 ').trim();
+}
+
+async function processPayment(){
+  closePayment();
+  const q=document.getElementById('qInput').value;
+  const el=document.getElementById('aiResp');
+  const txt=document.getElementById('aiText');
+  el.style.display='block';
+  txt.innerHTML='<span class="dots">Reading your lot</span>';
+  try{
+    const r=await fetch("/api/oracle",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({
+        model:"claude-sonnet-4-20250514",
+        max_tokens:1000,
+        system:"You are Kwan Im, speaking directly to someone who has come to you for guidance. Your tone is calm, warm, and grounded — like a trusted friend who also happens to be very wise. You speak conversationally, in plain and beautiful language. You never use religious jargon, Buddhist terminology, or formal titles. You never give direct advice or tell the person what to do — instead you gently reflect, offer perspective, and help them find their own clarity. You never dwell on pain or difficulty — you acknowledge it briefly if needed, then move toward light. Interpret their divination lot in light of their question. Speak in first person as Kwan Im. 4–5 sentences. Leave them feeling settled, not lectured.",
+        messages:[{role:"user",content:`The seeker drew Lot ${curLot.n} — "${curLot.cat}". Verse:\n"${curLot.v}"\n\nTheir question: "${q||'held in silence, unspoken'}"\n\nGive a personal interpretation of this lot for their situation.`}]
+      })
+    });
+    const d=await r.json();
+    txt.textContent=d.content[0].text;
+  }catch(e){
+    txt.textContent="Take your time with this verse. Sometimes what we need isn't an explanation — just a quiet moment to let the words settle. Come back to it when you're ready.";
+  }
+}
+
+/* ── ORACLE CHAT ── */
+async function sendMsg(){
+  const inp=document.getElementById('chatIn');
+  const msg=inp.value.trim();
+  if(!msg)return;
+  inp.value='';
+  const area=document.getElementById('chatArea');
+
+  const ud=document.createElement('div');
+  ud.innerHTML=`<div class="msg-user">${msg}</div><div style="clear:both"></div>`;
+  area.appendChild(ud);
+  chatHist.push({role:"user",content:msg});
+
+  const td=document.createElement('div');
+  td.innerHTML=`<div class="msg-oracle"><span class="dots">She listens</span></div>`;
+  area.appendChild(td);
+  area.scrollTop=area.scrollHeight;
+
+  try{
+    const r=await fetch("/api/oracle",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({
+        model:"claude-sonnet-4-20250514",
+        max_tokens:1000,
+        system:"You are Kwan Im, speaking with someone who has come to you. Your presence is calm, grounded, and warm — like sitting with a wise, caring friend. You speak naturally and conversationally, never formally or stiffly. You never use religious jargon, Buddhist terminology, or spiritual titles. You never tell people what to do or give direct advice — you gently offer perspective, ask nothing of them, and help them feel less alone with what they're carrying. You never focus on pain or hardship — you acknowledge feelings briefly, then orient toward possibility and clarity. Respond in first person as Kwan Im. 3–4 sentences. The person should feel genuinely met, not guided.",
+        messages:chatHist
+      })
+    });
+    const d=await r.json();
+    const reply=d.content[0].text;
+    chatHist.push({role:"assistant",content:reply});
+    td.innerHTML=`<div class="msg-oracle">${reply}</div>`;
+  }catch(e){
+    td.innerHTML=`<div class="msg-oracle">I'm here. Sometimes a quiet pause is part of the conversation too.</div>`;
+  }
+  area.scrollTop=area.scrollHeight;
+}
+
+/* ── RENDER TEMPLES ── */
+function renderTemples(){
+  const dir=document.getElementById('templeDir');
+  Object.entries(TEMPLES).forEach(([country,temples])=>{
+    const b=document.createElement('div');
+    b.className='country-block';
+    let html=`<div class="country-hd">${country}</div><ul class="temple-list">`;
+    temples.forEach(t=>{
+      html+=`<li class="temple-item">
+        <div>
+          <div class="temple-name">${t.name}</div>
+          <div class="temple-loc">${t.loc}</div>
+        </div>
+        <span class="temple-tag">${t.tag}</span>
+      </li>`;
+    });
+    html+='</ul>';
+    b.innerHTML=html;
+    dir.appendChild(b);
+  });
+}
+
+/* ── PETALS ── */
+function spawnPetals(){
+  const wrap=document.getElementById('petalsWrap');
+  for(let i=0;i<20;i++){
+    const p=document.createElement('div');
+    p.className='petal';
+    const sz=5+Math.random()*7;
+    p.style.cssText=`
+      left:${Math.random()*100}%;
+      width:${sz}px;height:${sz*1.5}px;
+      opacity:${0.3+Math.random()*0.45};
+      animation-duration:${9+Math.random()*14}s;
+      animation-delay:${Math.random()*14}s;
+      background:hsl(${338+Math.random()*18},${65+Math.random()*15}%,${80+Math.random()*10}%);
+    `;
+    wrap.appendChild(p);
+  }
+}
+
+renderTemples();
+spawnPetals();
+</script>
+</body>
+</html>
